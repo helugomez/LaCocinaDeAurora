@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+    <link rel="shortcut icon" href="../assets/img/LOGO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Ustedes</title>
+</head>
+<body>
+    <header> 
+        <h1 class="titulo">Ustedes</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="w-25" src="../assets/img/LOGO.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/menuSalados.html">Platos Salados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/platosDulces.html">Platos Dulces</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../pages/comidasAtp.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Comidas ATP
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../pages/comidasAtp.html">Celíacos</a></li>
+                  <li><a class="dropdown-item" href="../pages/comidasAtp.html">Diabéticos</a></li>
+                  <li><a class="dropdown-item" href="../pages/comidasAtp.html">Veganos y Vegetarianos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/ustedes.html">Ustedes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+<main>
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/imagen (1).jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/imagen1 (1).jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/imagen2 (1).jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+    <main>
+        <div class="formularios">
+            <div class="comentarios">
+                <form action="recetas.php" method="post">
+                    <fieldset>
+                        <legend>Dejános tu comentario</legend>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                    <br>
+                    <input type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
+                    <br>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10">Ingrese su comentario</textarea>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reiniciar">
+                </fieldset>
+                </form>
+            </div>
+            <div class="recetas">
+                <form action="recetas.php" method="post">
+                    <fieldset>
+                        <legend>Compartí tu receta</legend>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                    <br>
+                    <input type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
+                    <br>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10">Ingrese su comentario</textarea>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reiniciar">
+                </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+<footer class="pie">
+    <div class="tarjeta2">
+        <h3>Visitá nuestras Redes</h3>
+        <div class="redes">
+          <a href="https://www.instagram.com/"><img src="../assets/img/Instagram_logo_2016.svg.webp" alt=""></a>          
+          <a href="https://www.facebook.com/"><img src="../assets/img/Facebook_f_logo_(2019).svg.webp" alt=""></a>
+        </div>
+    </div>
+    <h5>© 2022 Heliana Gómez, todos los derechos reservados.</h5>
+</footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
