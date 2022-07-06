@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(227, 252, 191);
-}
 .contenedor{
     display: grid;
     grid-template-areas: "header"
@@ -175,7 +172,7 @@ body{
     text-decoration: none;
 }
 .recetasSaladas{
-    background-color: rgb(20, 195, 142);
+    background-color: rgb(125, 211, 185);
     width: 75%;
     padding: 20px;
     text-align: justify;
@@ -193,7 +190,7 @@ body{
     width: 100%;
 }
 .recetasDulces{ 
-    background-color:rgb(20, 195, 142);
+    background-color:rgb(125, 211, 185);
     width: 75%;
     padding: 20px;
     text-align: justify;
@@ -211,7 +208,7 @@ body{
     width: 100%;
 }
 .atp{
-    background-color:rgb(20, 195, 142);
+    background-color:rgb(125, 211, 185);
     width: 75%;
     padding: 20px;
     text-align: justify;
@@ -283,14 +280,4 @@ body{
     .foto1{
         width: 50%;
     }
-}
-.tarjetaTrucos h2{
-    animation-name: aparecer;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-}
-@keyframes aparecer {
-    0%{
-        opacity: 0; 
-    } 
 }
