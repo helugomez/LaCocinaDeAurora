@@ -20,7 +20,7 @@
 }
 
 .pie {
-  background-color: #924f1b;
+  background-color: #f8ebbe;
   font-size: 16px;
   padding: 0px;
   text-align: center;
@@ -37,6 +37,11 @@
   margin: 5px;
   margin-bottom: 15px;
   border-radius: 5px;
+  font-size: 20px;
+  text-align: justify;
+}
+.tarjetaTrucos h2 {
+  font-size: 36px;
 }
 
 .tarjetaViandas {
@@ -46,19 +51,49 @@
   margin: 5px;
   margin-bottom: 15px;
   border-radius: 5px;
+  font-size: 20px;
+  text-align: justify;
+}
+.tarjetaViandas h2 {
+  font-size: 36px;
 }
 
 .recetasSaladas {
-  background-color: aqua;
+  background-color: #924f1b;
   width: 90%;
   padding: 20px;
   margin: 10px;
+  text-align: justify;
 }
-
-.menu {
-  background-color: brown;
+.recetasSaladas .menu {
+  background-color: #e2ac3f;
 }
-
-.ingred {
+.recetasSaladas .menu h3 {
+  font-size: 36px;
+}
+.recetasSaladas .menu .ingred {
   display: flex;
+}
+.recetasSaladas .menu p {
+  font-size: 20px;
+}
+
+.recetasDulces {
+  background-color: #924f1b;
+  width: 90%;
+  padding: 20px;
+  margin: 10px;
+  text-align: justify;
+}
+.recetasDulces .menu {
+  background-color: #e2ac3f;
+}
+.recetasDulces .menu h3 {
+  font-size: 36px;
+}
+.recetasDulces .menu .ingred {
+  display: flex;
+}
+.recetasDulces .menu p {
+  font-size: 20px;
 }

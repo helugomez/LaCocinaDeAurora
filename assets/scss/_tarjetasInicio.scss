@@ -5,7 +5,11 @@
     margin: 5px;
     margin-bottom: 15px;
     border-radius: 5px;
-  
+    font-size: $tamanioTexto;
+    text-align: justify;
+    h2{
+      font-size: $tamanioSubTitulo;
+    }
  }
  
  .tarjetaViandas{   
@@ -15,4 +19,11 @@
     margin: 5px;
     margin-bottom: 15px;
     border-radius: 5px;
+    font-size: $tamanioTexto;
+    text-align: justify;
+    h2{
+      font-size: $tamanioSubTitulo;
+    }
  }
+
+ 
