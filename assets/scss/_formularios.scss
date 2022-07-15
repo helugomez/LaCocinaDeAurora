@@ -1,0 +1,10 @@
+.btn{
+    padding: map-get($btn , padding );
+    border: map-get($btn , bordes) ;
+    border-radius: map-get($btn, radio );
+    background-color: map-get($btn , color );
+};
+.btn2{
+    @extend .btn;
+    background-color: $color3;
+}

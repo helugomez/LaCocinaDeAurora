@@ -6,3 +6,16 @@ $color2: #924f1b ;
 $color3: #e2ac3f ;
 $color4: #f8ebbe ;
 $color5: #7ba58d ;
+
+$colores:(
+    primario: $color1,
+    secundario: $color2,
+    terciario: $color3,
+);
+
+$btn:(
+    padding: 5px 30px,
+    bordes: 0,
+    radio: 5px,
+    color: $color5
+);
