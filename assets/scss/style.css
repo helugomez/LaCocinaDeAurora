@@ -1,8 +1,7 @@
 .titulo {
   margin: 0px;
-  color: #e2ac3f;
-  /*
-  background-image: linear-gradient(to right, rgb(173, 204, 223), rgb(57, 154, 211));*/
+  color: #cc9831;
+  background-image: linear-gradient(to right, #f8ebbe, #cc9831);
   background-color: #924f1b;
   padding: 50px;
   text-align: center;
@@ -11,12 +10,34 @@
   font-family: Indie Flower;
 }
 
+@media (max-width: 768px) {
+  .titulo {
+    padding: 20px;
+    font-size: 50px;
+  }
+}
 .navbar-expand-lg {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 .navbar-expand-lg .container-fluid {
-  background-color: #f8ebbe;
+  background-color: #bd733a;
+  padding: 20px;
+}
+.navbar-expand-lg ul li a {
+  color: #f8ebbe;
+}
+
+.navbar-nav .nav-link.active {
+  color: #924f1b;
+}
+
+.navbar-toggler {
+  color: #924f1b;
+}
+
+.dropdown-menu {
+  --bs-dropdown-bg: #bd733a ;
 }
 
 .pie {
@@ -66,7 +87,7 @@
   text-align: justify;
 }
 .recetasSaladas .menu {
-  background-color: #e2ac3f;
+  background-color: #cc9831;
 }
 .recetasSaladas .menu h3 {
   font-size: 36px;
@@ -86,7 +107,7 @@
   text-align: justify;
 }
 .recetasDulces .menu {
-  background-color: #e2ac3f;
+  background-color: #cc9831;
 }
 .recetasDulces .menu h3 {
   font-size: 36px;
@@ -106,5 +127,12 @@
 }
 
 .btn2 {
-  background-color: #e2ac3f;
+  background-color: #cc9831;
 }
+
+/*
+@mixin propiedades($ancho, $alto,$colorLetra) {
+    width: $ancho;
+    height: $alto;
+    color: $colorLetra;
+} */

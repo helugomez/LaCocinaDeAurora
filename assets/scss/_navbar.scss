@@ -3,6 +3,21 @@
     padding-bottom: 0px;
     
     .container-fluid {
-       background-color: $color4; 
+       background-color: $color6; 
+       padding: 20px;
     }
+    ul li a{
+      color: $color4;
+   }
  }
+
+ .navbar-nav .nav-link.active {
+   color: $color2;
+}
+
+.navbar-toggler {
+   color: $color2;
+}
+.dropdown-menu {
+   --bs-dropdown-bg: #bd733a ;
+}
