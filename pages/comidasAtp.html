@@ -14,45 +14,42 @@
     <header> 
         <h1 class="titulo">Comidas ATP</h1>
     </header>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/menuSalados.html">Platos Salados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/platosDulces.html">Platos Dulces</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="../pages/comidasAtp.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Comidas ATP
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-<!--              <li><a class="dropdown-item" href="../pages/comidasAtp.html">Celíacos</a></li> -->
-<!--              <li><a class="dropdown-item" href="../pages/comidasAtp.html">Diabéticos</a></li> -->
-                  <li><a class="dropdown-item" href="#celi">Celíacos</a></li>
-                  <li><a class="dropdown-item" href="#diab">Diabéticos</a></li>
-                  <li><a class="dropdown-item" href="#atp">Veganos y vegetarianos</a></li>
-<!--              <li><a class="dropdown-item" href="../pages/comidasAtp.html">Veganos y Vegetarianos</a></li> -->
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./menuSemanal.html">Menú Semanal</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/ustedes.html">Ustedes</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/menuSalados.html">PLATOS SALADOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/platosDulces.html">PLATOS DULCES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="../pages/comidasAtp.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                COMIDAS ATP
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#celi">CELÍACOS</a></li>
+                  <li><a class="dropdown-item" href="#diab">DIABÉTICOS</a></li>
+                  <li><a class="dropdown-item" href="#atp">VEGANOS Y VEGETARIANOS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/menuSemanal.html">MENÚ SEMANAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/ustedes.html">USTEDES</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </div>
+  </nav>
 <main>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
@@ -62,13 +59,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../assets/img/imagen (1).jpg" class="d-block w-100" alt="...">
+            <img src="../assets/img/ensalada (1).jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="../assets/img/imagen1 (1).jpg" class="d-block w-100" alt="...">
+            <img src="../assets/img/imagen atp 2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="../assets/img/imagen2 (1).jpg" class="d-block w-100" alt="...">
+            <img src="../assets/img/imagen atp 3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -82,12 +79,13 @@
     </div>
     <main>
         <div class="atp">
-            <div id="celi" class="celiacos">
+            <div id="celi" class="atp menu">
                 <div class="celiacos1">
-                    <h2>Celíacos</h2>
+                    <h1>Celíacos</h1>
                     <h3>Fainá</h3>
-                    <img src="../assets/img/faina.jpg" alt="comidasSaludables">
-                    <ul>Ingredientes
+                    <div class="ingred">
+                    <div><img class="img-fluid" src="../assets/img/faina (1).jpg" alt="comidasSaludables"></div>
+                    <ul class="fw-bold"> <h4>Ingredientes</h4>
                       <li>100 g de harina de garbanzo</li>
                       <li>300 ml de agua</li>
                       <li>40 g de aceite de oliva virgen extra</li>
@@ -95,6 +93,7 @@
                       <li>pimienta negra molida</li>
                       <li>aderezo al gusto: ajo granulado, orégano, queso rallado, tomillo</li>
                     </ul>
+                  </div>
                     <p>Elaboración: Comenzar a preparar la masa, al menos, cuatro horas antes. 
                       Disponer la harina de garbanzos en un recipiente y empezar a añadir el agua muy 
                       poco a poco, removiendo con las varillas manuales a medida que se incorpora, para 
@@ -115,8 +114,9 @@
                 </div>
                 <div class="celiacos2">    
                     <h3>Pan sin gluten</h3>
-                    <img src="../assets/img/pan.JPG" alt="comidasSaludables">
-                    <ul>Ingredientes
+                    <div class="ingred">
+                    <div><img class="img-fluid" src="../assets/img/pan (1).JPG" alt="comidasSaludables"></div>
+                    <ul class="fw-bold"> <h4>Ingredientes</h4>
                       <li>400 gr de harina para pan sin gluten</li>
                       <li>100 gr de harina de maíz sin gluten</li>
                       <li>1 cucharada de miel</li>
@@ -125,6 +125,7 @@
                       <li>1 cucharadita de aceite de oliva</li>
                       <li>1 cucharadita de sal</li>
                     </ul>
+                    </div>
                     <p>Ponemos la levadura en un bol con aproximadamente 1 vaso de agua templada y la miel. 
                       Mezclamos y dejamos reposar hasta que se forme una espuma. En otro bol mezclamos las 
                       harinas con el aceite, añadimos la harina fermentada y poco a poco el resto del agua 
@@ -137,8 +138,9 @@
                 </div>
                 <div class="celiacos3">
                     <h3>Lentejas estofadas</h3>
-                    <img src="../assets/img/lentejas.JPG" alt="comidasSaludables">
-                    <ul>Ingredientes para 6 porciones
+                    <div class="ingred">
+                    <div><img class="img-fluid" src="../assets/img/lentejas (1).JPG" alt="comidasSaludables"></div>
+                    <ul class="fw-bold"> <h4>Ingredientes para 6 porciones</h4>
                       <li>350 g de lentejas pardina</li>
                       <li>2 dientes de ajo</li>
                       <li>1 cebolla</li>
@@ -147,31 +149,34 @@
                       <li>agua o caldo de verduras</li>
                       <li>Sal, oimienta dulce y pimientón dulce</li>
                     </ul>
+                    </div>
                     <p>Pelamos y lavamos todas las verduras y, en el caso de los pimientos, despepitamos. 
                       Las introducimos en una olla a presión junto con las lentejas (sin remojar), el 
                       pimentón y la hoja de laurel. Añadimos suficiente agua, caldo de verduras o mezcla de ambos para cubrir los ingredientes y cerramos la olla, colocando la válvula en la posición 2. En el momento en que empiece a salir el vapor, bajamos la intensidad del fuego (medio alto) y contamos 15 minutos. Apagamos el fuego y dejamos que el vapor salga lentamente. Cuando esto ocurra, abrimos la olla y retiramos las verduras. Al estar enteras, esto resultará fácil. Si preparáis las lentejas en una olla tradicional, el procedimiento es el mismo a excepción del tiempo de cocción que será mayor: 50 minutos y con la tapadera puesta. Esto permite comprobar el punto en cualquier momento. Trituramos las verduras con un poco de líquido de la cocción con una batidora de brazo. Podemos pasar el puré resultante por un colador o devolverlo tal cual a la olla. Salpimentamos al gusto, damos un último hervor para homogeneizar y servimos.
                     </p>
                 </div>
             </div>
-            <div id="diab" class="diabeticos">
-              <h2>Diabéticos</h2>
+            <div id="diab" class="atp menu">
+              <h1>Diabéticos</h1>
               <h3>Flan sin azúcar</h3>
-              <img src="../assets/img/flan.JPG" alt="comidasSaludables">
-              <ul>Ingredientes para el caramelo
-                <li>Jarabe de arce</li>
-                <li>Agua</li>
-                <li>1 pizca de bicarbonato de sodio</li>
-              </ul>
-              <ul>Ingredientes para el flan
-                <li>3 huevos</li>
-                <li>250 cc de leche condensada</li>
-                <li>2 sobrecitos de stevia en polvo</li>
-              </ul>
-              <ul>Ingredientes para la crema
-                <li>Queso crema</li>
-                <li>Agua</li>
-                <li>Stevia a gusto</li>
-              </ul>
+              <div class="ingred">
+                <div><img class="img-fluid" src="../assets/img/flan (1).JPG" alt="comidasSaludables"></div>
+                <ul class="fw-bold"> <h4>Ingredientes para el caramelo</h4>
+                  <li>Jarabe de arce</li>
+                  <li>Agua</li>
+                  <li>1 pizca de bicarbonato de sodio</li>
+                </ul>
+                <ul class="fw-bold"><h4>Ingredientes para el flan</h4>
+                  <li>3 huevos</li>
+                  <li>250 cc de leche condensada</li>
+                  <li>2 sobrecitos de stevia en polvo</li>
+                </ul>
+                <ul class="fw-bold"><h4>Ingredientes para la crema</h4>
+                  <li>Queso crema</li>
+                  <li>Agua</li>
+                  <li>Stevia a gusto</li>
+                </ul>
+              </div>
               <p>Para hacer nuestro caramelo sin azúcar, en un vaso-recipiente apto para microondas agregamos una cucharada de sirope de arce junto con media cucharada de agua, y una pizca de bicarbonato de sodio.
                 Llevar al microondas a temperatura máxima durante 1 minuto.
                 Ahora tenemos que ver si ha tomado textura de caramelo. Si aún no tiene textura de caramelo, volvemos a llevarlo al microondas una vez más, esta vez durante 30 segundos. Si queremos reemplazar el caramelo podemos hacerlo con algún dulce o mermelada a elección sin azúcar.
@@ -182,32 +187,35 @@
                 Mientras tanto vamos a preparar la crema sin azúcar. En un bol poner 1 cucharada de queso crema ligth, junto con una pizca de esencia de vainilla y otra pizca de Stevia. Agregar un chorro de agua y batir hasta lograr la consistencia deseada. Éste es un complemento ideal para acompañar éste flan apto para diabéticos, ya que la crema tampoco tiene azúcar.
                 Desmoldar el flan con cuidado en un plato, servir con la crema que preparamos a base de queso crema, y agregar un chorro de sirope de arce.
               </p>
-            </div>
             <div>
               <h3>Tortilla de berenjena</h3>
-              <img src="../assets/img/berenjenas.JPG" alt="comidasSaludables">
-              <ul>Ingredientes
-                <li>2 berenjenas medianas</li>
-                <li>5-6 huevos</li>
-                <li>Sal a gusto</li>
-                <li>Aceite de oliva</li>
-              </ul>
+              <div class="ingred">
+                <div><img src="../assets/img/berenjenas.JPG" alt="comidasSaludables"></div>
+                <ul class="fw-bold"><h4>Ingredientes</h4>
+                  <li>2 berenjenas medianas</li>
+                  <li>5-6 huevos</li>
+                  <li>Sal a gusto</li>
+                  <li>Aceite de oliva</li>
+                </ul>
+              </div>
               <p>Lo primero que tenemos que hacer es asar las berenjenas. Las partimos por la mitad, les hacemos unos cortes en la carne, las ponemos en una bandeja de horno, las espolvoreamos con sal y un chorrito de aceite de oliva por encima y las metemos al horno precalentado a 180ºC durante 40 minutos más o menos...hasta que estén blanditas.
                 Las sacamos, dejamos que se templen y las partimos en trocitos pequeños. Batimos los huevos y los mezclamos con las berenjenas, rectificamos de sal.
                 Ponemos un poquito de aceite en una sartén antiadherente y la ponemos a fuego medio. Cuando el aceite esté caliente añadimos los huevos mezclados con la berenjena y dejamos que se haga durante unos minutos  por un lado, le damos la vuelta y cuajamos por el otro lado...el tiempo depende de como nos guste de cuajada por dentro...</p>
             </div>
             <div>
               <h3>Caldo de pollo</h3>
-              <img src="../assets/img/caldo de pollo.JPG" alt="comidasSaludables">
-              <ul>Ingredientes
-                <li>200 gr de pollo</li>
-                <li>100 gr de fideos</li>
-                <li>50 gr de calabaza</li>
-                <li>50 gr de zanahoria</li>
-                <li>1 rama de apio</li>
-                <li>1 puerro</li>
-                <li>Sal y pimienta a gusto</li>
-              </ul>
+              <div class="ingred">
+                <div><img class="img-fluid" src="../assets/img/caldo de pollo.JPG" alt="comidasSaludables"></div>
+                <ul class="fw-bold"><h4>Ingredientes</h4>
+                  <li>200 gr de pollo</li>
+                  <li>100 gr de fideos</li>
+                  <li>50 gr de calabaza</li>
+                  <li>50 gr de zanahoria</li>
+                  <li>1 rama de apio</li>
+                  <li>1 puerro</li>
+                  <li>Sal y pimienta a gusto</li>
+                </ul>
+              </div>
               <p>Introduce en una olla el pollo troceado y cúbrelo con agua (3 litros).
                 Lleva a ebullición.
                 Cuando el agua rompa a hervir, añade las verduras peladas y troceadas. Salpimenta y añade el manojo de perejil.
@@ -217,20 +225,22 @@
               </p>
             </div>
             <div id="atp" class="veganos">
-            <h2>Veganos y Vegetarianos</h2>
+            <h1>Veganos y Vegetarianos</h1>
             <h3>Hamburguesas vegetarianas</h3>
-            <img src="../assets/img/hamburguesa.JPG" alt="comidasSaludables">
-            <ul>Ingredientes
-              <li>1 taza de lentejas cocidas</li>
-              <li>2 tazas de quinoa previamente cocida</li>
-              <li>1 de taza de pan rallado de maíz</li>
-              <li>3 huevos</li>
-              <li>1 cucharada de sal</li>
-              <li>1 cucharada de orégano</li>
-              <li>1 cucharada de ajo deshidratado</li>
-              <li>1 cucharada de cebolla deshidratada</li>
-              <li>1 cucharada de pimentón</li>
-            </ul>
+            <div class="ingred">
+              <div><img class="img-fluid" src="../assets/img/hamburguesa (1).JPG" alt="comidasSaludables"></div>
+              <ul class="fw-bold"><h4>Ingredientes</h4>
+                <li>1 taza de lentejas cocidas</li>
+                <li>2 tazas de quinoa previamente cocida</li>
+                <li>1 de taza de pan rallado de maíz</li>
+                <li>3 huevos</li>
+                <li>1 cucharada de sal</li>
+                <li>1 cucharada de orégano</li>
+                <li>1 cucharada de ajo deshidratado</li>
+                <li>1 cucharada de cebolla deshidratada</li>
+                <li>1 cucharada de pimentón</li>
+              </ul>
+            </div>
             <p>Cómo cocinar la quinoa: La quinoa la debes lavar bajo el grifo previamente durante un par de minutos para eliminar su amargor y luego cocinar como si de arroz se tratara durante 15 min.
               Mezclar en un bol la quinoa y las lentejas cocidas con la pasta de anacardos (puedes usar otro fruto seco) y las especias.
               Añadir el pan rallado.
@@ -242,13 +252,15 @@
               A mitad de la cocción dar vuelta a las hamburguesas. ¡Y listo!
             </p>
             <h3>Cremoso de fresas</h3>
-            <img src="../assets/img/fresas.JPG" alt="comidasSaludables">
-            <ul>Ingredientes
-              <li>250 gr de fresas</li>
-              <li>300 gr de tofu</li>
-              <li>10 gr de stevia en polvo</li>
-              <li>30 gr de mermelada de fresa sin azúcar</li>
-            </ul>
+            <div class="ingred">
+              <div><img class="img-fluid" src="../assets/img/fresas.JPG" alt="comidasSaludables"></div>
+              <ul class="fw-bold"><h4>Ingredientes</h4>
+                <li>250 gr de fresas</li>
+                <li>300 gr de tofu</li>
+                <li>10 gr de stevia en polvo</li>
+                <li>30 gr de mermelada de fresa sin azúcar</li>
+              </ul>
+            </div>
             <p>Lava y escurre el tofu.
               Lava bien las fresas y retira los tallos.
               Mezcla en un recipiente el tofu, las fresas y la mermelada.
@@ -258,24 +270,26 @@
               ¡Buen provecho!
             </p>
             <h3>Curry de garbanzos con mango</h3>
-            <img src="../assets/img/curry.JPG" alt="comidasSaludables">
-            <ul>Ingredientes
-              <li>300 g de garbanzos cocidos</li>
-              <li>2 dientes de ajo</li>
-              <li>1 cebolleta pequeña</li>
-              <li>2 g de cilantro en grano</li>
-              <li>2 g de comino en grano</li>
-              <li>1 hoja de curry o de laurel</li>
-              <li>2 guindillas frescas pequeñas (al gusto)</li>
-              <li>1 puerro pequeño y fino</li>
-              <li> 1 zanahoria pequeña</li>
-              <li>1 apio pequeño</li>
-              <li>5 g de mezcla de curry molido</li>
-              <li>1 mango maduro</li>
-              <li>200 g de leche de coco o “nata” de avena de cocina</li>
-              <li>5 ml de jugo de limón</li>
-              <li>Pimineta negra, sal y aceite de oliva</li>
-            </ul>
+            <div class="ingred">
+              <div><img class="img-fluid" src="../assets/img/curry.JPG" alt="comidasSaludables"></div>
+              <ul class="fw-bold"><h4>Ingredientes</h4>
+                <li>300 g de garbanzos cocidos</li>
+                <li>2 dientes de ajo</li>
+                <li>1 cebolleta pequeña</li>
+                <li>2 g de cilantro en grano</li>
+                <li>2 g de comino en grano</li>
+                <li>1 hoja de curry o de laurel</li>
+                <li>2 guindillas frescas pequeñas (al gusto)</li>
+                <li>1 puerro pequeño y fino</li>
+                <li> 1 zanahoria pequeña</li>
+                <li>1 apio pequeño</li>
+                <li>5 g de mezcla de curry molido</li>
+                <li>1 mango maduro</li>
+                <li>200 g de leche de coco o “nata” de avena de cocina</li>
+                <li>5 ml de jugo de limón</li>
+                <li>Pimineta negra, sal y aceite de oliva</li>
+              </ul>
+            </div>
             <p>Picar muy finos los ajos, el jengibre pelado y la cebolleta. Lavar y picar las verduras, o cortar en bastones. 
               Sacar la pulpa del mango y triturar con sus jugos para que quede cremosa. Calentar aceite en sartén o cazuela 
               con el comino, cilantro y las hojas de curry o laurel, hasta que suelten su aroma. Añadir la pasta de ajo y 
