@@ -1,6 +1,6 @@
 .tarjetaTrucos{
     background-color: white;
-    width: 60%;
+    width: 80%;
     padding: 20px;
     margin: 5px;
     margin-bottom: 15px;
@@ -14,7 +14,7 @@
  
  .tarjetaViandas{   
     background-color: white;
-    width: 60%;
+    width: auto;
     padding: 20px;
     margin: 5px;
     margin-bottom: 15px;
@@ -25,3 +25,8 @@
       font-size: $tamanioSubTitulo;
     }
  }
+ @media (max-width: 768px) {
+  .tarjetaTrucos{
+    font-size: 14px;
+  }
+}

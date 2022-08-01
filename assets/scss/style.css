@@ -53,7 +53,7 @@
 
 .tarjetaTrucos {
   background-color: white;
-  width: 60%;
+  width: 80%;
   padding: 20px;
   margin: 5px;
   margin-bottom: 15px;
@@ -67,7 +67,7 @@
 
 .tarjetaViandas {
   background-color: white;
-  width: 60%;
+  width: auto;
   padding: 20px;
   margin: 5px;
   margin-bottom: 15px;
@@ -79,6 +79,11 @@
   font-size: 36px;
 }
 
+@media (max-width: 768px) {
+  .tarjetaTrucos {
+    font-size: 14px;
+  }
+}
 .recetasSaladas {
   background-color: #924f1b;
   width: 90%;
@@ -154,11 +159,25 @@
 .comentario .comen {
   margin: 5px;
   padding: 5px;
-  width: 500px;
+  width: 600px;
   border-radius: 10px;
   background-color: #f8ebbe;
 }
 
+@media (max-width: 768px) {
+  .comentario {
+    width: 400px;
+  }
+  .comentario .name {
+    width: 250px;
+  }
+  .comentario .mail {
+    width: 265px;
+  }
+  .comentario .comen {
+    width: 350px;
+  }
+}
 .atp {
   background-color: #924f1b;
   width: 90%;
