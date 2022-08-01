@@ -123,13 +123,40 @@
 
 .btn, .btn2 {
   padding: 5px 30px;
-  border: 0;
   border-radius: 5px;
-  background-color: #7ba58d;
+  background-color: #cc9831;
 }
 
 .btn2 {
   background-color: #cc9831;
+}
+
+.comentario {
+  margin: 30px;
+  background-color: #924f1b;
+  padding: 10px;
+  width: auto;
+}
+.comentario .name {
+  margin: 5px;
+  padding: 5px;
+  width: 285px;
+  border-radius: 10px;
+  background-color: #f8ebbe;
+}
+.comentario .mail {
+  margin: 5px;
+  padding: 5px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #f8ebbe;
+}
+.comentario .comen {
+  margin: 5px;
+  padding: 5px;
+  width: 500px;
+  border-radius: 10px;
+  background-color: #f8ebbe;
 }
 
 .atp {

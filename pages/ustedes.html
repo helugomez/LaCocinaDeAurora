@@ -12,75 +12,65 @@
 </head>
 <body>
     <header> 
-        <h1 class="titulo">Ustedes</h1>
+        <h1 class="titulo">CONTACTO</h1>
     </header>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/menuSalados.html">Platos Salados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/platosDulces.html">Platos Dulces</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="../pages/comidasAtp.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Comidas ATP
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../pages/comidasAtp.html">Celíacos</a></li>
-                  <li><a class="dropdown-item" href="../pages/comidasAtp.html">Diabéticos</a></li>
-                  <li><a class="dropdown-item" href="../pages/comidasAtp.html">Veganos y Vegetarianos</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./menuSemanal.html">Menú Semanal</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="../pages/ustedes.html">Ustedes</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/menuSalados.html">PLATOS SALADOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/platosDulces.html">PLATOS DULCES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../pages/comidasAtp.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                COMIDAS ATP
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../pages/comidasAtp.html">CELÍACOS</a></li>
+                <li><a class="dropdown-item" href="../pages/comidasAtp.html">DIABÉTICOS</a></li>
+                <li><a class="dropdown-item" href="../pages/comidasAtp.html">VEGANOS Y VEGETARIANOS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/menuSemanal.html">MENÚ SEMANAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./pages/ustedes.html">CONTACTO</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </div>
+  </nav>
 <main>
-       <div class="formularios">
-            <div class="comentarios">
+  <div class="container">
+       <div class="row g-3 align-items-center formularios">
+            <div class="col-auto">
                 <form action="recetas.php" method="post">
-                    <fieldset>
-                        <legend>Dejános tu comentario</legend>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-                    <br>
-                    <input type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
-                    <br>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10">Ingrese su comentario</textarea>
-                    <input class="btn" type="submit" value="Enviar">
-                    <input class="btn2" type="reset" value="Reiniciar">
-                </fieldset>
+                    <div class="comentario">
+                      <legend>Dejános tu comentario</legend>
+                      <label for="nombre">Nombre</label>
+                      <input class="name" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                      <br>
+                      <label for="nombre">E-mail</label>
+                      <input class="mail" type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
+                      <br>
+                      <textarea class="comen" name="comentario" id="comentario" cols="30" rows="10">Ingrese su comentario</textarea>
+                      <br>
+                      <input class="btn" type="submit" value="Enviar">
+                      <input class="btn2" type="reset" value="Reiniciar">
+                    </div>
                 </form>
             </div>
-            <div class="recetas">
-                <form action="recetas.php" method="post">
-                    <fieldset>
-                        <legend>Compartí tu receta</legend>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-                    <br>
-                    <input type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
-                    <br>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10">Ingrese su comentario</textarea>
-                    <input class="btn" type="submit" value="Enviar">
-                    <input class="btn2" type="reset" value="Reiniciar">
-                </fieldset>
-                </form>
-            </div>
-        </div>
+          </div>
     </main>
 <footer class="pie">
     <div class="tarjeta2">
