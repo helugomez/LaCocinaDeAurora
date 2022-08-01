@@ -48,36 +48,26 @@
       </div>
   </nav>
 <main>
-       <div class="formularios">
-            <div class="comentarios">
+  <div class="container">
+       <div class="row g-3 align-items-center formularios">
+            <div class="col-auto">
                 <form action="recetas.php" method="post">
-                    <fieldset>
-                        <legend>Dejános tu comentario</legend>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-                    <br>
-                    <input type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
-                    <br>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10">Ingrese su comentario</textarea>
-                    <input class="btn" type="submit" value="Enviar">
-                    <input class="btn2" type="reset" value="Reiniciar">
-                </fieldset>
+                    <div class="comentario">
+                      <legend>Dejános tu comentario</legend>
+                      <label for="nombre">Nombre</label>
+                      <input class="name" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                      <br>
+                      <label for="nombre">E-mail</label>
+                      <input class="mail" type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
+                      <br>
+                      <textarea class="comen" name="comentario" id="comentario" cols="30" rows="10">Ingrese su comentario</textarea>
+                      <br>
+                      <input class="btn" type="submit" value="Enviar">
+                      <input class="btn2" type="reset" value="Reiniciar">
+                    </div>
                 </form>
             </div>
-            <div class="recetas">
-                <form action="recetas.php" method="post">
-                    <fieldset>
-                        <legend>Compartí tu receta</legend>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-                    <br>
-                    <input type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
-                    <br>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10">Ingrese su comentario</textarea>
-                    <input class="btn" type="submit" value="Enviar">
-                    <input class="btn2" type="reset" value="Reiniciar">
-                </fieldset>
-                </form>
-            </div>
-        </div>
+          </div>
     </main>
 <footer class="pie">
     <div class="tarjeta2">

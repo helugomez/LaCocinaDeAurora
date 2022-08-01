@@ -8,3 +8,30 @@
     @extend .btn;
     background-color: $color3;
 }
+.comentario{
+    margin: 30px;
+    background-color: $color2;
+    padding: 10px;
+    width: auto;
+    .name{
+    margin: 5px;
+    padding: 5px;
+    width: 285px;
+    border-radius: 10px;
+    background-color: $color4;
+    }
+    .mail{
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: $color4;
+    }
+    .comen{
+    margin: 5px;
+    padding: 5px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: $color4;
+    }
+}
