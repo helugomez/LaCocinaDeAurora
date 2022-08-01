@@ -152,10 +152,3 @@
 .atp .menu p {
   font-size: 20px;
 }
-
-/*
-@mixin propiedades($ancho, $alto,$colorLetra) {
-    width: $ancho;
-    height: $alto;
-    color: $colorLetra;
-} */
