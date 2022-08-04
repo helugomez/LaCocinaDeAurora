@@ -35,9 +35,9 @@
                 COMIDAS ATP
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="../pages/comidasAtp.html">CELÍACOS</a></li>
-                  <li><a class="dropdown-item" href="../pages/comidasAtp.html">DIABÉTICOS</a></li>
-                  <li><a class="dropdown-item" href="../pages/comidasAtp.html">VEGANOS Y VEGETARIANOS</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:5501/pages/comidasAtp.html#celi">CELÍACOS</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5501/pages/comidasAtp.html#diab">DIABÉTICOS</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5501/pages/comidasAtp.html#atp">VEGANOS Y VEGETARIANOS</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -48,10 +48,9 @@
       </div>
   </nav>
   <main class="container">
-      <div class="row g-3 align-items-center formularios">
-        <div class="col-auto">
+      <div class="formularios">
           <form action="recetas.php" method="post">
-                <div class="comentario">
+                <div class="comentario shadow p-3 mb-5 bg-body rounded">
                   <legend>Dejános tu comentario</legend>
                   <label for="nombre">Nombre</label>
                   <input class="name" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
@@ -61,7 +60,7 @@
                   <br>
                   <textarea class="comen" name="comentario" id="comentario" cols="30" rows="10">Ingrese su comentario</textarea>
                   <br>
-                  <input class="btn" type="submit" value="Enviar">
+                  <input class="btn2" type="submit" value="Enviar">
                   <input class="btn2" type="reset" value="Reiniciar">
                 </div>
           </form>
@@ -76,7 +75,7 @@
             <a href="https://www.facebook.com/"><img src="../assets/img/Facebook_f_logo_(2019).svg.webp" alt=""></a>
           </div>
       </div>
-      <h5>© 2022 La Cocina de Aurora, todos los derechos reservados.</h5>
+      <h5 class="copi">© 2022 La Cocina de Aurora, todos los derechos reservados.</h5>
   </footer>
   </div>
 <!-- JavaScript Bundle with Popper -->

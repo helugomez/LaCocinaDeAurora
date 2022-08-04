@@ -5,7 +5,8 @@
     margin: 10px;
     text-align: justify;
     .menu{
-      background-color: $color3;
+      background: rgb(195,139,34);
+      background: linear-gradient(0deg, rgba(195,139,34,1) 0%, rgba(252,229,179,1) 100%);
       width: auto;
       h3{
          font-size: $tamanioSubTitulo;

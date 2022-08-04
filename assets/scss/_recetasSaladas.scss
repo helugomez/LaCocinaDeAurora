@@ -6,7 +6,8 @@
     text-align: justify;
     
     .menu{
-      background-color: $color3;
+      background: rgb(195,139,34);
+background: linear-gradient(0deg, rgba(195,139,34,1) 0%, rgba(252,229,179,1) 100%);
       width: auto;
       h3{
          font-size: $tamanioSubTitulo;
@@ -18,4 +19,19 @@
       font-size: $tamanioTexto;
       }
    }
- }
+};
+@media (max-width: 768px){
+  .ingred{
+    display: flex;
+    flex-direction: column;
+  }
+  .img{
+    width: 50%;
+  }
+}
+.prep{
+  font-size: 20px;
+  padding: 10px;
+  
+
+}

@@ -51,12 +51,16 @@
   width: 32px;
 }
 
+.copi {
+  font-size: 12px;
+}
+
 .tarjetaTrucos {
-  background-color: white;
   width: 80%;
   padding: 20px;
-  margin: 5px;
+  margin: 15px;
   margin-bottom: 15px;
+  margin-top: 5px;
   border-radius: 5px;
   font-size: 20px;
   text-align: justify;
@@ -92,7 +96,8 @@
   text-align: justify;
 }
 .recetasSaladas .menu {
-  background-color: #cc9831;
+  background: rgb(195, 139, 34);
+  background: linear-gradient(0deg, rgb(195, 139, 34) 0%, rgb(252, 229, 179) 100%);
   width: auto;
 }
 .recetasSaladas .menu h3 {
@@ -105,6 +110,20 @@
   font-size: 20px;
 }
 
+@media (max-width: 768px) {
+  .ingred {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    width: 50%;
+  }
+}
+.prep {
+  font-size: 20px;
+  padding: 10px;
+}
+
 .recetasDulces {
   background-color: #924f1b;
   width: 90%;
@@ -113,7 +132,8 @@
   text-align: justify;
 }
 .recetasDulces .menu {
-  background-color: #cc9831;
+  background: rgb(195, 139, 34);
+  background: linear-gradient(0deg, rgb(195, 139, 34) 0%, rgb(252, 229, 179) 100%);
   width: auto;
 }
 .recetasDulces .menu h3 {
@@ -137,8 +157,9 @@
 }
 
 .comentario {
-  margin: 30px;
-  background-color: #924f1b;
+  margin: 15px;
+  background: rgb(147, 96, 2);
+  background: linear-gradient(0deg, rgb(147, 96, 2) 0%, rgb(195, 139, 34) 100%);
   padding: 10px;
   width: auto;
 }
@@ -159,7 +180,7 @@
 .comentario .comen {
   margin: 5px;
   padding: 5px;
-  width: 600px;
+  width: 95%;
   border-radius: 10px;
   background-color: #f8ebbe;
 }
@@ -186,7 +207,8 @@
   text-align: justify;
 }
 .atp .menu {
-  background-color: #cc9831;
+  background: rgb(195, 139, 34);
+  background: linear-gradient(0deg, rgb(195, 139, 34) 0%, rgb(252, 229, 179) 100%);
   width: auto;
 }
 .atp .menu h3 {
