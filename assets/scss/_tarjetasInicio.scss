@@ -1,5 +1,5 @@
 .tarjetaTrucos{
-    width: 80%;
+    width: auto;
     padding: 20px;
     margin: 15px;
     margin-bottom: 15px;
@@ -7,7 +7,7 @@
     border-radius: 5px;
     font-size: $tamanioTexto;
     text-align: justify;
-    
+    display: flex;
     h2{
       font-size: $tamanioSubTitulo;
     }
@@ -30,4 +30,42 @@
   .tarjetaTrucos{
     font-size: 14px;
   }
+}
+.lista{
+  text-decoration: none; 
+  list-style: none;
+  width: 80%;
+  padding: 20px;
+  .accordion-button {
+    background-color: $color4;
+    color: black;
+    box-shadow: none;
+  } 
+}
+@media only screen and (max-width: 568px) {
+  .titulo{
+    display: none;
+  }
+  
+}
+@media only screen and (max-width: 992px) {
+  .carrusel{
+  display: none;
+}
+}
+.carrusel{
+  width: 50%;
+  margin-top: 70px;
+}
+.rapiditas{
+  display: flex;
+}
+;
+
+@media (max-width: 768px){
+.rapiditas{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
 }

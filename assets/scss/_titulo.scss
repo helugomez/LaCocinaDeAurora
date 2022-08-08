@@ -1,7 +1,6 @@
 .titulo {
     margin: 0px;
     color: $color3;
-    
     background-image: linear-gradient(to right, $color4, $color3);
     background-color: $color2;
     padding: 50px;
@@ -9,10 +8,20 @@
     font-size: 80px;
     font-style: oblique;
     font-family: Indie Flower;
+    animation-name: aparecer;
+    animation-duration: 3s;
  }
  @media (max-width: 768px) {
     .titulo {
         padding: 20px;
         font-size: 50px;
      }
+}
+@keyframes aparecer {
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
 }

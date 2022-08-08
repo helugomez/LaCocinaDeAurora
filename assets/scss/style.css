@@ -1,3 +1,22 @@
+.btn3 {
+  color: aqua;
+  background-color: rgb(0, 89, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+}
+
+.bnt4 {
+  text-align: right;
+  color: rgb(174, 0, 255);
+}
+
+.btnSubir {
+  margin: 10px;
+  position: absolute-bottom;
+}
+
 .titulo {
   margin: 0px;
   color: #cc9831;
@@ -8,12 +27,22 @@
   font-size: 80px;
   font-style: oblique;
   font-family: Indie Flower;
+  animation-name: aparecer;
+  animation-duration: 3s;
 }
 
 @media (max-width: 768px) {
   .titulo {
     padding: 20px;
     font-size: 50px;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .navbar-expand-lg {
@@ -56,7 +85,7 @@
 }
 
 .tarjetaTrucos {
-  width: 80%;
+  width: auto;
   padding: 20px;
   margin: 15px;
   margin-bottom: 15px;
@@ -64,6 +93,7 @@
   border-radius: 5px;
   font-size: 20px;
   text-align: justify;
+  display: flex;
 }
 .tarjetaTrucos h2 {
   font-size: 36px;
@@ -86,6 +116,44 @@
 @media (max-width: 768px) {
   .tarjetaTrucos {
     font-size: 14px;
+  }
+}
+.lista {
+  text-decoration: none;
+  list-style: none;
+  width: 80%;
+  padding: 20px;
+}
+.lista .accordion-button {
+  background-color: #f8ebbe;
+  color: black;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 568px) {
+  .titulo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .carrusel {
+    display: none;
+  }
+}
+.carrusel {
+  width: 50%;
+  margin-top: 70px;
+}
+
+.rapiditas {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .rapiditas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 .recetasSaladas {
@@ -201,7 +269,7 @@
 }
 .atp {
   background-color: #924f1b;
-  width: 90%;
+  width: 70%;
   padding: 20px;
   margin: 10px;
   text-align: justify;
