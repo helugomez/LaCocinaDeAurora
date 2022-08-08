@@ -42,11 +42,10 @@
     box-shadow: none;
   } 
 }
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 368px) {
   .titulo{
     display: none;
   }
-  
 }
 @media only screen and (max-width: 992px) {
   .carrusel{
@@ -59,16 +58,12 @@
 }
 .rapiditas{
   display: flex;
-}
-;
+};
 
 @media (max-width: 768px){
 .rapiditas{
 display: flex;
 flex-direction: column;
 width: 100%;
-  }
-  .h3{
-  text-align: center;
   }
 }
